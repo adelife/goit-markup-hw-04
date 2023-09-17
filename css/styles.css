@@ -121,7 +121,7 @@ border-bottom: 1px solid #e7e9fc
     bottom: -20px;
 }*/
 
-.nav-link-first{
+.nav-link.active{
     position: relative;
     color: #404bbf;
     display: inline-block;
@@ -134,7 +134,8 @@ border-bottom: 1px solid #e7e9fc
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.nav-link-first::after{
+.nav-link:hover::after,
+.nav-link.active::after{
     content: '';
     position: absolute;
     left: 0;
@@ -142,7 +143,6 @@ border-bottom: 1px solid #e7e9fc
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-
 }
 .nav-link:last-child{
     margin: 0;
@@ -312,6 +312,7 @@ border-bottom: 1px solid #e7e9fc
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .name-person{
     padding: 32px 0;
 }
@@ -326,7 +327,6 @@ border-bottom: 1px solid #e7e9fc
 
 }
 .team-text{
-    transform:
     color: #434455;
     font-size: 16px;
     font-weight: 400;
@@ -365,7 +365,7 @@ border-bottom: 1px solid #e7e9fc
 }
 .social-links{
     display: flex;
-    width: 100%
+    width: 100%;
     height: 100%;
     padding:12px 12px;
     background-color:#4d5ae5;
@@ -411,7 +411,7 @@ border-bottom: 1px solid #e7e9fc
 }
 .portfolio-ittem:hover{
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    
+    transform: translateY(0%);
 }
 .portfolio-card{
     background:#FFF;
@@ -434,30 +434,16 @@ border-bottom: 1px solid #e7e9fc
     font-weight: 400;
     letter-spacing: 0.32px;
     line-height: 1.5;
-    transform: translateY(0%);
+    transform: translateY(0);
 }
 .portfolio-img{
     position: relative;
-        overflow: hidden;
-}
-.portfolio-overlay{
-    margin: 0 auto;
-    position: absolute;
-    inset: 0;
-    background-color:#4D5AE5;
-    color: #F4F4FD;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: justify;
-    transform: translateY(100%);
-    transition: transform 1s;
+    overflow: hidden;
 }
 .paragraf-overlay{
     position: absolute;
+    margin: 0 auto;
+    inset: 0;
     top: 0;
     font-size: 16px;
     line-height: 1.5;
@@ -466,11 +452,11 @@ border-bottom: 1px solid #e7e9fc
     padding: 40px 32px;
     background-color: #4d5ae5;
     height: 100%;
-    width:100%
-    transform: translateY(100%);
+    width:100%;
+    transform: rotateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-ittem:hover .portfolio-overlay{
+.portfolio-ittem:hover .paragraf-overlay{
     transform: translateY(0);
 }
 /* footer*/
