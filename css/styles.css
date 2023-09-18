@@ -303,7 +303,7 @@ border-bottom: 1px solid #e7e9fc
 .team-list{
     display: flex;
     flex-wrap: wrap;
-    gap:24px;
+    gap: 24px;
     align-items: center;
 }
 .team-ittem{
@@ -316,7 +316,6 @@ border-bottom: 1px solid #e7e9fc
 
 .name-person{
     padding: 32px 0;
-    gap: 24px;
 }
 .team-person{
     color: #2e2f42;
@@ -336,7 +335,7 @@ border-bottom: 1px solid #e7e9fc
     letter-spacing: 0.32px;
     text-align: center;
 }
-.sosials-list{
+.sosials-list {
     display:flex;
     gap: 24px;
     padding: 32px 0;
@@ -345,11 +344,10 @@ border-bottom: 1px solid #e7e9fc
 
 .icon-list{
     display: flex;
-    gap: 24px;
     width: 40px;
     height: 40px;
     height: 100%;
-    weight:100%;
+    
     justify-content:center; 
     align-items:center; 
     border-radius: 50%; 
