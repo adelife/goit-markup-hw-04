@@ -316,6 +316,7 @@ border-bottom: 1px solid #e7e9fc
 
 .name-person{
     padding: 32px 0;
+    gap: 24px;
 }
 .team-person{
     color: #2e2f42;
@@ -344,6 +345,7 @@ border-bottom: 1px solid #e7e9fc
 
 .icon-list{
     display: flex;
+    gap: 24px;
     width: 40px;
     height: 40px;
     height: 100%;
