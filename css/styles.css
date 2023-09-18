@@ -336,7 +336,7 @@ border-bottom: 1px solid #e7e9fc
 }
 .sosials-list{
     display:flex;
-    gap:24px;
+    gap: 24px;
     padding: 32px 0;
     justify-content: center;
 }
